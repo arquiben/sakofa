@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0a0a0a;
+  --orange: #ea580c;
+}
+
+* { scrollbar-width: thin; scrollbar-color: #ea580c #1a1a1a; }
+
+body {
+  background: #0a0a0a;
+  color: white;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.sankofa-card {
+  @apply bg-zinc-900 border border-zinc-800 rounded-2xl p-5 hover:border-orange-500/50 transition-all;
+}
+
+.sankofa-btn {
+  @apply bg-[#ea580c] hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-xl transition-all active:scale-95;
+}
+
+.glass {
+  backdrop-filter: blur(12px);
+  background: rgba(10,10,10,0.8);
+}
